@@ -22,7 +22,6 @@ class Task4 extends Thread{
     }
 }
 public class MultiTaskMultiThread {
-
     public static void main(String[] args) {
 
         Task1 t1=new Task1();
@@ -37,5 +36,4 @@ public class MultiTaskMultiThread {
         Task4 t4=new Task4();
         t4.start();
     }
-
 }
