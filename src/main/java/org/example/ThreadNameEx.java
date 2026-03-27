@@ -17,9 +17,11 @@ public class ThreadNameEx {
 //        int ans=10/0;
 //        System.out.println(ans);
         MyTest mt=new MyTest();
-        mt.setName("Mytttt");
         mt.start();
+        mt.setName("Mytttt");
         System.out.println(mt.getName());
+        System.out.println("Alive or not: "+mt.isAlive());
+        System.out.println("Alive or not: "+mt.isAlive());
 //        System.out.println(Thread.currentThread().getName());
     }
 }
