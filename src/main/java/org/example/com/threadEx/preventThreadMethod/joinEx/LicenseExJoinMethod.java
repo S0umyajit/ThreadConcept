@@ -10,6 +10,13 @@ class Medical extends Thread{
         }
     }
 }
+
+/*The purpose of medical.join(2000) inside your
+DriveTest thread is to tell the Driving Test thread:
+        "Wait for the Medical thread to finish, " +
+        "but only for a maximum of 2,000 milliseconds (2 seconds)."
+
+ */
 class DriveTest extends Thread{
     Medical medical;
     DriveTest(Medical medical){
@@ -17,7 +24,7 @@ class DriveTest extends Thread{
     }
     public void run(){
         try {
-            medical.join();
+           // medical.join(200);
             System.out.println("Drive Test start");
             Thread.sleep(2000);
             System.out.println("Drive Test completed");
