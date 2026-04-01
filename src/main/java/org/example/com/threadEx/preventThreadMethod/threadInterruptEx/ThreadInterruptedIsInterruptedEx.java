@@ -6,6 +6,7 @@ class Abcd extends Thread{
         Thread.currentThread().interrupt(); //true
         System.out.println(Thread.interrupted()); //false, as thread was already interrupted value will change from true to false
         System.out.println(Thread.currentThread().isInterrupted());
+        System.out.println(Thread.interrupted()); // Once thread is changed from true to false, it will not change again
         try {
             for (int i = 1; i <= 5; i++) {
                 System.out.println(i);
