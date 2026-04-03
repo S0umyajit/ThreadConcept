@@ -19,6 +19,7 @@ public class ThreadNameEx {
         MyTest mt=new MyTest();
         mt.start();
         mt.setName("Mytttt");
+        System.out.println("Name: "+mt.currentThread().getName());
         System.out.println(mt.getName());
         System.out.println("Alive or not: "+mt.isAlive());
         System.out.println("Alive or not: "+mt.isAlive());
