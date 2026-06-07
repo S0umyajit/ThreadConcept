@@ -4,8 +4,8 @@ public class Test {
     public static void main(String[] args) {
         Counter counter=new Counter();
 
-        MyThread t1=new MyThread(counter);
-        MyThread t2=new MyThread(counter);
+        MyThread t1=new MyThread(counter,"Soumyajit");
+        MyThread t2=new MyThread(counter,"Tupai");
 
         t1.start();
         t2.start();
