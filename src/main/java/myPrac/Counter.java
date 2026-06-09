@@ -7,7 +7,10 @@ public class Counter {
         return count;
     }
 
-    public synchronized void increment(){
-        count++;
+    public void increment(){
+        synchronized(this){
+            count++;
+        }
+        System.out.println("Hello");
     }
 }
